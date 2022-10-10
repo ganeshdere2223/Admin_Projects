@@ -34,8 +34,8 @@ stages:
       inputs:
         command: buildAndPush
         repository: $(imageRepository)
-         Dockerfile:'**/Dockerfile'
-        containerRegistry: 'mybflcontainer'
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
         
