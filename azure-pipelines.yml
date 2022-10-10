@@ -34,8 +34,10 @@ stages:
       inputs:
         command: buildAndPush
         repository: $(imageRepository)
+        buildContext: '$(Build.Repository.LocalPath)'
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
+        
         tags: |
           $(tag)
         
