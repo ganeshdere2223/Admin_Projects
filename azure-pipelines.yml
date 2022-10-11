@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'ecc424de-7c84-4641-930b-9ec25bddf17b'
   imageRepository: 'dotnet6docker'
   containerRegistry: 'mybflcontainer.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '/home/vsts/work/1/s/**/Dockerfile'
   tag: '$(Build.BuildId)'
   workingDirectory: '$(Build.SourcesDirectory)/WebApi'
 
