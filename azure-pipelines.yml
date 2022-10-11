@@ -16,6 +16,7 @@ variables:
   containerRegistry: 'mybflcontainer.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
+  workingDirectory: '$(Build.SourcesDirectory)/WebApi'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
