@@ -17,7 +17,7 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   
   tag: '$(Build.BuildId)'
-  workingDirectory: '$(Build.SourcesDirectory)/WebApi'
+  workingDirectory: '$(Build.SourcesDirectory)/Admin_Projects'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
